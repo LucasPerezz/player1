@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "mario-bros";
+    src: url(./../../fonts/Super\ Mario\ Bros..ttf);
+}
+
+.homeView--container {
+    background-image: url('./../../assets/home1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    min-height: 100vh;
+    filter: brightness(0.4);
+    position: absolute;
+}
+
+
+
+.homeView--container__components {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(1.15);
+    z-index: 1;
+}
+
+.homeView--container__components h1 {
+    font-family: 'mario-bros';
+    color: rgb(131, 255, 224);
+    font-size: 42px;
+    text-shadow: 10px rgba(0, 0, 0, 0.3);
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.homeView--button {
+    margin: auto;
+    width: 60%;
+    max-width: 240px;
+    height: 50px;
+    border-radius: 8px 8px 8px 8px;
+    border: none;
+    font-size: 18px;
+    background-color: rgb(0, 135, 126);
+    color: white;
+    cursor: pointer;
+}
+
+.homeView--button:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (min-width: 1024px) {
+    .homeView--container__components h1 {
+        font-family: 'mario-bros';
+        color: rgb(131, 255, 224);
+        font-size: 80px;
+    }
+}
+
+@media only screen and (min-width: 1980px) {
+    .homeView--container__components h1 {
+        font-family: 'mario-bros';
+        color: rgb(131, 255, 224);
+        font-size: 100px;
+    }
+}
